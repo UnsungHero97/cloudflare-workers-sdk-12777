@@ -1,0 +1,36 @@
+// https://developers.cloudflare.com/workers/wrangler/configuration/
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "assets": {
+    "directory": "build",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "compatibility_date": "2026-03-11",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "TransferObject",
+        "name": "TRANSFER"
+      }
+    ]
+  },
+  "main": "src/worker/index.ts",
+  "migrations": [
+    {
+      "new_sqlite_classes": [
+        "TransferObject"
+      ],
+      "tag": "2026-03-11"
+    }
+  ],
+  "name": "cloudflare-workers-sdk-12777",
+  "observability": {
+    "enabled": true
+  }
+}
