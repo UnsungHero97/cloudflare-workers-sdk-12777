@@ -1,5 +1,7 @@
 # cloudflare-workers-sdk-12777
 
+https://github.com/cloudflare/workers-sdk/issues/12777
+
 To reproduce:
 
 1. visit https://cloudflare-workers-sdk-12777.oskov.workers.dev/
