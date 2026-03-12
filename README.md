@@ -7,3 +7,5 @@ To reproduce:
 3. click initiate transfer
 4. click download
 5. observe `/close` request results in `Error: Network connection lost.`
+
+https://github.com/user-attachments/assets/f162acd1-99a7-47e7-870a-9a646a4a6b4d
